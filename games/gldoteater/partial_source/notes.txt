@@ -1,0 +1,10 @@
+There is a bug caused by some kind of mathematical error (rounding error maybe). 
+In dev c++ I got one result and now in visual studio I get another result.
+In render.cpp uncomment the lines to see the tile position.
+Somewhere in the projects folder I found the file with the bug need to update.
+Move off solid tile is a good place to start
+
+savegame.php was lost when the server hosting it went down. 
+Sould rewrit it, it used to provide the hiscore list and i think match making between two clients.
+
+have to replace the backgrounds in the artwork

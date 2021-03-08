@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Dominators">
+</Property><Property Name="Solution File" Value="E:\myfiles\code\projects\games\Dominators\Dominators.sln">
+</Property><Property Name="User Options File" Value="E:\myfiles\code\projects\games\Dominators\Dominators.suo">
+</Property><Property Name="Date" Value="Wednesday, June 06, 2012">
+</Property><Property Name="Time" Value="1:31 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Dominators.sln" Description="File successfully backed up as E:\myfiles\code\projects\games\Dominators\Dominators.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="Dominators.suo" Description="File successfully backed up as E:\myfiles\code\projects\games\Dominators\Dominators.suo.old">
+</Event><Event ErrorLevel="0" Project="Dominators" Source="Dominators.vcproj" Description="Converting project file 'E:\myfiles\code\projects\games\Dominators\Dominators.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Dominators" Source="Dominators.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="Dominators" Source="Dominators.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Dominators" Source="Dominators.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="Dominators" Source="Dominators.vcproj" Description="MSB8012: $(TargetPath) ('E:\myfiles\code\projects\games\Dominators\.\Debug\Dominators.exe') does not match the Linker's OutputFile property value '.\Debug\Dominators.exe' ('E:\myfiles\code\projects\games\Dominators\Debug\Dominators.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="Dominators" Source="Dominators.vcproj" Description="MSB8012: $(TargetPath) ('E:\myfiles\code\projects\games\Dominators\.\Release\Dominators.exe') does not match the Linker's OutputFile property value '.\Release\Dominators.exe' ('E:\myfiles\code\projects\games\Dominators\Release\Dominators.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="Dominators" Source="Dominators.vcproj" Description="Done converting to new project file 'E:\myfiles\code\projects\games\Dominators\Dominators.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Dominators" Source="Dominators.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Dominators.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Dominators.sln" Description="Converted">
+</Event></UpgradeLog>

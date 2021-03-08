@@ -1,0 +1,43 @@
+# Project: fmod
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 14/11/19 08:47
+
+WXLIBNAME = wxmsw29u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Objects/MingW/main.o Objects/MingW/CFmod.o
+LINKOBJ   = "Objects/MingW/main.o" "Objects/MingW/CFmod.o"
+LIBS      = -L"C:/Program Files (x86)/Dev-Cpp/lib/wx/gcc_lib" -L"C:/Program Files (x86)/Dev-Cpp/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -mwindows "../../Program Files (x86)/FMOD SoundSystem/FMOD Studio API Universal Windows Platform/api/core/lib/x86/fmod.lib" "../../Program Files (x86)/FMOD SoundSystem/FMOD Studio API Universal Windows Platform/api/core/lib/x64/fmod.lib"  
+INCS      = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include"
+CXXINCS   = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/" -I"C:/Program Files (x86)/Dev-Cpp/include/common" -I"C:/projects/NonStandardHeaders" -I"C:/Program Files (x86)/FMOD SoundSystem/FMOD Studio API Universal Windows Platform/api/core/inc"
+RCINCS    = --include-dir "C:/PROGRA~2/Dev-Cpp/include/common"
+BIN       = Output/MingW/fmod.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES)  
+CFLAGS    = $(INCS) $(DEFINES)  
+GPROF     = gprof.exe
+ifeq ($(OS),Windows_NT)
+   RM = del /Q
+   FixPath = $(subst /,\,$1)
+else
+   RM = rm -f
+   FixPath = $1
+endif
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(call FixPath,$(LINKOBJ)) "$(call FixPath,$(BIN))"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Objects/MingW/main.o: $(GLOBALDEPS) main.cpp
+	$(CPP) -c main.cpp -o Objects/MingW/main.o $(CXXFLAGS)
+
+Objects/MingW/CFmod.o: $(GLOBALDEPS) CFmod.cpp
+	$(CPP) -c CFmod.cpp -o Objects/MingW/CFmod.o $(CXXFLAGS)

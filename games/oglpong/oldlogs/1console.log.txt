@@ -1,0 +1,107 @@
+: Enter Host IP address : 
+try_catch_this: 
+try_catch_this: 69.144.209.3
+: Connecting to : 69.144.209.3
+: Asynchronous connection attempt started.
+: Connection established 
+: Server Version: 0.4.3.8
+try_catch_this: ok
+try_catch_this: type
+: what I do?
+: didn't read instructions lol
+try_catch_this: press ~ to move the chat box
+try_catch_this: so you can serv
+: damn lol
+try_catch_this: :P
+try_catch_this: :P 
+try_catch_this: lag
+: ahhh lag
+try_catch_this: yup
+try_catch_this: :P
+: the tail on ball gets messed up on mine it do that on yours
+try_catch_this: yes
+try_catch_this: a slght bug
+: ok just making sure you knew
+try_catch_this: grrrrrrrrrrrrr
+: :)
+: try_catch_this wins!
+try_catch_this: lol
+: wow ping went high and bam lol
+try_catch_this: yup
+try_catch_this: almost got that one
+try_catch_this: :P
+: :)
+try_catch_this: grrrrrrrrrrrrrr
+: I am the winner!
+: :)
+try_catch_this: yup
+try_catch_this: ...
+: it only lags when I'm receiving your input
+try_catch_this: k
+: when I'm sending the ball out it works nice and smooth
+try_catch_this: its still in alpha
+try_catch_this: so I got lots of bugs to fix
+: working pretty dang good for alpha :)
+try_catch_this: :(
+: try_catch_this wins!
+try_catch_this: :P
+try_catch_this: slow one
+: try_catch_this wins!
+try_catch_this: press shift
+try_catch_this: to change ball speed
+: ahhh
+try_catch_this: I need to reset the ball velocity
+try_catch_this: after changing turns
+try_catch_this: 0_o
+: try_catch_this wins!
+try_catch_this: you cant miss this
+try_catch_this: :P
+: :)
+try_catch_this: real slow one coming
+try_catch_this: :P
+: try_catch_this wins!
+try_catch_this: ok thats enough for now
+: lol pulled up menu by accidnet
+try_catch_this: I am gladthat it actually works
+try_catch_this: k
+: uh oh ball is stuck
+try_catch_this: so does the font bother you?
+: no I don't have any problems with it
+try_catch_this: k
+: I'm in full screen mode so it's nice :)
+try_catch_this: what fps do you get?
+try_catch_this: k
+: 137
+try_catch_this: well I am going to announce this in a week or so
+try_catch_this: at gamedev
+: cool
+try_catch_this: one last serv then
+: ok
+try_catch_this: :p
+: :D
+try_catch_this: THIS WILL BE SO SLOW
+try_catch_this: THAT YOU COULDNT POSSIBLY MISS
+try_catch_this: :p
+: lol
+try_catch_this: lol
+try_catch_this: :P
+: oh Imiss :D
+try_catch_this: hmmmm
+try_catch_this: getting fast now
+: yeah
+try_catch_this: :P
+: yeah!
+: :)
+try_catch_this: gg
+: indeed
+try_catch_this: back to irc
+: o
+: ok
+try_catch_this: there is a log
+try_catch_this: chexk in the direstory
+try_catch_this: of this game
+: ok
+try_catch_this: to see the log
+try_catch_this: it will be erased next time you run the game
+try_catch_this: bye
+: later

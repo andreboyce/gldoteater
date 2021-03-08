@@ -1,0 +1,1 @@
+C:\Dev-C++\bin\strip.exe %1

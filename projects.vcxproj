@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{09C71111-D3E4-4884-AE2F-D7155B1D500E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\projects\NonStandardHeaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)d.lib</OutputFile>
+      <AdditionalDependencies>fmodL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\projects\NonStandardHeaders\FMOD\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\projects\NonStandardHeaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\projects\NonStandardHeaders\FMOD\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="astar\AStar2d.h" />
+    <ClInclude Include="WinSockLib\C_WinSock\C_AsyncSockStream\AsyncSockStream.h" />
+    <ClInclude Include="WinSockLib\C_WinSock\C_AsyncSockStream\C_AsyncSockStream.h" />
+    <ClInclude Include="c_hdc\c_getdc\C_GetDC.h" />
+    <ClInclude Include="opengllib\c_glbitmapfont\C_GLBitmapFont.h" />
+    <ClInclude Include="opengllib\c_glbox\C_GLBox.h" />
+    <ClInclude Include="opengllib\c_glbutton\C_GLButton.h" />
+    <ClInclude Include="opengllib\c_glcamera\C_GLCamera.h" />
+    <ClInclude Include="opengllib\c_gldisplaylists\C_GLDisplayLists.h" />
+    <ClInclude Include="opengllib\c_glerrorstrings\C_GLErrorStrings.h" />
+    <ClInclude Include="opengllib\c_glfont\C_GLFont.h" />
+    <ClInclude Include="opengllib\c_glline\C_GLLine.h" />
+    <ClInclude Include="OpenGLLib\C_GLListBox\C_GLListBox.h" />
+    <ClInclude Include="opengllib\c_gloutlinedfont\C_GLOutLinedFont.h" />
+    <ClInclude Include="opengllib\c_glpoint\C_GLPoint.h" />
+    <ClInclude Include="opengllib\c_gltexquad\C_GLTexQuad.h" />
+    <ClInclude Include="OpenGLLib\C_GLTextBox\C_GLTextBox.h" />
+    <ClInclude Include="OpenGLLib\C_GLTexTriangle\C_GLTexTriangle.h" />
+    <ClInclude Include="opengllib\c_gltexturemanager\C_GLTextureManager.h" />
+    <ClInclude Include="opengllib\c_gltexturemanagerhash\C_GLTextureManagerHash.h" />
+    <ClInclude Include="opengllib\c_gltexturemappedfont\C_GLTextureMappedFont.h" />
+    <ClInclude Include="opengllib\c_gltrianglestrip\C_glTriangleStrip.h" />
+    <ClInclude Include="opengllib\c_glvbo\C_GLVBO.h" />
+    <ClInclude Include="opengllib\c_glvertex\C_GLVertex.h" />
+    <ClInclude Include="c_hdc\C_HDC.h" />
+    <ClInclude Include="c_hdc\c_memorydc\C_MemoryDC.h" />
+    <ClInclude Include="c_hdc\c_paintdc\C_PaintDC.h" />
+    <ClInclude Include="WinSockLib\C_WinSock\C_AsyncSockStream\C_RAsyncSockStream.h" />
+    <ClInclude Include="WinSockLib\C_WinSock\C_AsyncSockStream\C_SAsyncSockStream.h" />
+    <ClInclude Include="WinSockLib\C_WinSock\C_Socket\C_Socket.h" />
+    <ClInclude Include="C_Sprite\C_Sprite.h" />
+    <ClInclude Include="C_SpriteMap2D\C_SpriteMap2D.h" />
+    <ClInclude Include="C_WinControllBase\C_WinButton\C_WinButton.h" />
+    <ClInclude Include="C_WinControllBase\C_WinControllBase.h" />
+    <ClInclude Include="C_WinControllBase\C_WinControllManager\C_WinControllManager.h" />
+    <ClInclude Include="C_WinControllBase\C_WinEdit\C_WinEdit.h" />
+    <ClInclude Include="C_WinControllBase\C_WinIPAddress\C_WinIPAddress.h" />
+    <ClInclude Include="C_WinControllBase\C_WinListBox\C_WinListBox.h" />
+    <ClInclude Include="C_WinControllBase\C_WinProgressBar\C_WinProgressBar.h" />
+    <ClInclude Include="C_WinControllBase\C_WinScrollBar\C_WinScrollBar.h" />
+    <ClInclude Include="WinSockLib\C_WinSock\C_WinSock.h" />
+    <ClInclude Include="WinSockLib\C_WinSock\C_WinSockClient\C_WinSockClient.h" />
+    <ClInclude Include="WinSockLib\C_WinSock\C_WinSockErrors\C_WinSockErrors.h" />
+    <ClInclude Include="WinSockLib\C_WinSock\C_WinSockServer\C_WinSockServer.h" />
+    <ClInclude Include="C_WinControllBase\C_WinStatic\C_WinStatic.h" />
+    <ClInclude Include="C_WinControllBase\C_WinStatusBar\C_WinStatusBar.h" />
+    <ClInclude Include="C_WinControllBase\C_WinTab\C_WinTab.h" />
+    <ClInclude Include="C_WinControllBase\C_WinToolBar\C_WinToolBar.h" />
+    <ClInclude Include="C_WinControllBase\C_WinToolTip\C_WinToolTip.h" />
+    <ClInclude Include="C_WinControllBase\C_WinTreeView\C_WinTreeView.h" />
+    <ClInclude Include="C_WinControllBase\C_WinUpDown\C_WinUpDown.h" />
+    <ClInclude Include="cdll\CDll.h" />
+    <ClInclude Include="cfmod\CFmod.h" />
+    <ClInclude Include="cglrc\CGLRC.h" />
+    <ClInclude Include="chbitmap\CHBITMAP.h" />
+    <ClInclude Include="CHPen\CHPen.h" />
+    <ClInclude Include="lua\cluastate\CLuaState.h" />
+    <ClInclude Include="lua\cluatocfunction\CLuaToCFunction.h" />
+    <ClInclude Include="winthread\cmutex\CMutex.h" />
+    <ClInclude Include="collisionobject\CollisionObject.h" />
+    <ClInclude Include="collisionobject\collisionrectangle\CollisionRectangle.h" />
+    <ClInclude Include="collosiondetection\CollosionDetection.h" />
+    <ClInclude Include="commontypes.h" />
+    <ClInclude Include="console\Console.h" />
+    <ClInclude Include="CTrackPopupMenu\CTrackPopupMenu.h" />
+    <ClInclude Include="CWinApplication\CWinApplication.h" />
+    <ClInclude Include="CWinBase\CWinBase.h" />
+    <ClInclude Include="CWinFileHandler\CWinFileHandler.h" />
+    <ClInclude Include="CWinMain\CWinMain.h" />
+    <ClInclude Include="CXMLMenu\CXMLMenu.h" />
+    <ClInclude Include="cyclicredundancycodes\CyclicRedundancyCodes.h" />
+    <ClInclude Include="errorutil\errorutil.h" />
+    <ClInclude Include="framerate\FrameRate.h" />
+    <ClInclude Include="fstreamutil\FstreamUtil.h" />
+    <ClInclude Include="GameState\GameState.h" />
+    <ClInclude Include="c_hdc\HDCs.h" />
+    <ClInclude Include="InputMap\InputMap.h" />
+    <ClInclude Include="KeyInput\KeyInput.h" />
+    <ClInclude Include="limitfps\LimitFPS.h" />
+    <ClInclude Include="mathutility\MathUtility.h" />
+    <ClInclude Include="mathvector\MathVector.h" />
+    <ClInclude Include="opengllib\OpenGLLib.h" />
+    <ClInclude Include="opengllib\openglutility\OpenGLUtility.h" />
+    <ClInclude Include="options\Options.h" />
+    <ClInclude Include="particlesystems\particle\Particle.h" />
+    <ClInclude Include="particlesystems\particlesystem\ParticleSystem.h" />
+    <ClInclude Include="particlesystems\ParticleSystems.h" />
+    <ClInclude Include="projects.h" />
+    <ClInclude Include="particlesystems\rainparticles\RainParticles.h" />
+    <ClInclude Include="randomnum\RandomNum.h" />
+    <ClInclude Include="SideScrollingText\SideScrollingText.h" />
+    <ClInclude Include="apps\spriteanimationeditor\SpriteAnimation.h" />
+    <ClInclude Include="structs\Structs.h" />
+    <ClInclude Include="taunts\Taunts.h" />
+    <ClInclude Include="apps\spriteanimationeditor\TextureList.h" />
+    <ClInclude Include="tile\Tile.h" />
+    <ClInclude Include="tilemap\TileMap.h" />
+    <ClInclude Include="tilemap\TileMapHeader.h" />
+    <ClInclude Include="TileMapLib\TileMapLib.h" />
+    <ClInclude Include="tilemap\TileMapSpecialData.h" />
+    <ClInclude Include="tilemap\TileMapSpecialDataTypes.h" />
+    <ClInclude Include="tileset\TileSet.h" />
+    <ClInclude Include="timeinterval\TimeInterval.h" />
+    <ClInclude Include="tinyxml\tinystr.h" />
+    <ClInclude Include="tinyxml\tinyxml.h" />
+    <ClInclude Include="mathvector\vector2d\Vector2D.h" />
+    <ClInclude Include="mathvector\vector3d\Vector3D.h" />
+    <ClInclude Include="C_WinControllBase\WinControlls.h" />
+    <ClInclude Include="windowsutility\WindowsUtility.h" />
+    <ClInclude Include="winfilehandler\WinFileHandler.h" />
+    <ClInclude Include="winhfont\WinHFont.h" />
+    <ClInclude Include="winparsecommandline\WinParseCommandLine.h" />
+    <ClInclude Include="WinSockLib\WinSockLib.h" />
+    <ClInclude Include="winthread\WinThread.h" />
+    <ClInclude Include="wintimers\WinTimers.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="astar\AStar2d.cpp" />
+    <ClCompile Include="WinSockLib\C_WinSock\C_AsyncSockStream\C_AsyncSockStream.cpp" />
+    <ClCompile Include="c_hdc\c_getdc\C_GetDC.cpp" />
+    <ClCompile Include="opengllib\c_glbitmapfont\C_GLBitmapFont.cpp" />
+    <ClCompile Include="opengllib\c_glbox\C_GLBox.cpp" />
+    <ClCompile Include="opengllib\c_glbutton\C_GLButton.cpp" />
+    <ClCompile Include="opengllib\c_glcamera\C_GLCamera.cpp" />
+    <ClCompile Include="opengllib\c_gldisplaylists\C_GLDisplayLists.cpp" />
+    <ClCompile Include="opengllib\c_glerrorstrings\C_GLErrorStrings.cpp" />
+    <ClCompile Include="opengllib\c_glfont\C_GLFont.cpp" />
+    <ClCompile Include="opengllib\c_glline\C_GLLine.cpp" />
+    <ClCompile Include="OpenGLLib\C_GLListBox\C_GLListBox.cpp" />
+    <ClCompile Include="opengllib\c_gloutlinedfont\C_GLOutLinedFont.cpp" />
+    <ClCompile Include="opengllib\c_glpoint\C_GLPoint.cpp" />
+    <ClCompile Include="opengllib\c_gltexquad\C_GLTexQuad.cpp" />
+    <ClCompile Include="OpenGLLib\C_GLTextBox\C_GLTextBox.cpp" />
+    <ClCompile Include="OpenGLLib\C_GLTexTriangle\C_GLTexTriangle.cpp" />
+    <ClCompile Include="opengllib\c_gltexturemanager\C_GLTextureManager.cpp" />
+    <ClCompile Include="opengllib\c_gltexturemanagerhash\C_GLTextureManagerHash.cpp" />
+    <ClCompile Include="opengllib\c_gltexturemanagerhash\C_GLTextureManagerHashDDS.cpp" />
+    <ClCompile Include="opengllib\c_gltexturemanagerhash\C_GLTextureManagerHashPNG.cpp" />
+    <ClCompile Include="opengllib\c_gltexturemanagerhash\C_GLTextureManagerHashTGA.cpp" />
+    <ClCompile Include="opengllib\c_gltexturemappedfont\C_GLTextureMappedFont.cpp" />
+    <ClCompile Include="opengllib\c_gltrianglestrip\C_glTriangleStrip.cpp" />
+    <ClCompile Include="opengllib\c_glvbo\C_GLVBO.cpp" />
+    <ClCompile Include="opengllib\c_glvertex\C_GLVertex.cpp" />
+    <ClCompile Include="c_hdc\C_HDC.cpp" />
+    <ClCompile Include="c_hdc\c_memorydc\C_MemoryDC.cpp" />
+    <ClCompile Include="c_hdc\c_paintdc\C_PaintDC.cpp" />
+    <ClCompile Include="WinSockLib\C_WinSock\C_AsyncSockStream\C_RAsyncSockStream.cpp" />
+    <ClCompile Include="WinSockLib\C_WinSock\C_AsyncSockStream\C_SAsyncSockStream.cpp" />
+    <ClCompile Include="WinSockLib\C_WinSock\C_Socket\C_Socket.cpp" />
+    <ClCompile Include="C_Sprite\C_Sprite.cpp" />
+    <ClCompile Include="C_SpriteMap2D\C_SpriteMap2D.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinButton\C_WinButton.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinControllBase.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinControllManager\C_WinControllManager.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinEdit\C_WinEdit.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinIPAddress\C_WinIPAddress.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinListBox\C_WinListBox.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinProgressBar\C_WinProgressBar.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinScrollBar\C_WinScrollBar.cpp" />
+    <ClCompile Include="WinSockLib\C_WinSock\C_WinSock.cpp" />
+    <ClCompile Include="WinSockLib\C_WinSock\C_WinSockClient\C_WinSockClient.cpp" />
+    <ClCompile Include="WinSockLib\C_WinSock\C_WinSockErrors\C_WinSockErrors.cpp" />
+    <ClCompile Include="WinSockLib\C_WinSock\C_WinSockServer\C_WinSockServer.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinStatic\C_WinStatic.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinStatusBar\C_WinStatusBar.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinTab\C_WinTab.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinToolBar\C_WinToolBar.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinToolTip\C_WinToolTip.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinTreeView\C_WinTreeView.cpp" />
+    <ClCompile Include="C_WinControllBase\C_WinUpDown\C_WinUpDown.cpp" />
+    <ClCompile Include="cdll\CDll.cpp" />
+    <ClCompile Include="cfmod\CFmod.cpp" />
+    <ClCompile Include="cglrc\CGLRC.cpp" />
+    <ClCompile Include="chbitmap\CHBITMAP.cpp" />
+    <ClCompile Include="CHPen\CHPen.cpp" />
+    <ClCompile Include="lua\cluastate\CLuaState.cpp" />
+    <ClCompile Include="lua\cluatocfunction\CLuaToCFunction.cpp" />
+    <ClCompile Include="winthread\cmutex\CMutex.cpp" />
+    <ClCompile Include="collisionobject\CollisionObject.cpp" />
+    <ClCompile Include="collisionobject\collisionrectangle\CollisionRectangle.cpp" />
+    <ClCompile Include="collosiondetection\CollosionDetection.cpp" />
+    <ClCompile Include="console\Console.cpp" />
+    <ClCompile Include="CTrackPopupMenu\CTrackPopupMenu.cpp" />
+    <ClCompile Include="CWinApplication\CWinApplication.cpp" />
+    <ClCompile Include="CWinBase\CWinBase.cpp" />
+    <ClCompile Include="CWinFileHandler\CWinFileHandler.cpp" />
+    <ClCompile Include="CWinMain\CWinMain.cpp" />
+    <ClCompile Include="CXMLMenu\CXMLMenu.cpp" />
+    <ClCompile Include="cyclicredundancycodes\CyclicRedundancyCodes.cpp" />
+    <ClCompile Include="errorutil\errorutil.cpp" />
+    <ClCompile Include="framerate\FrameRate.cpp" />
+    <ClCompile Include="fstreamutil\FstreamUtil.cpp" />
+    <ClCompile Include="GameState\GameState.cpp" />
+    <ClCompile Include="InputMap\InputMap.cpp" />
+    <ClCompile Include="KeyInput\KeyInput.cpp" />
+    <ClCompile Include="limitfps\LimitFPS.cpp" />
+    <ClCompile Include="mathutility\MathUtility.cpp" />
+    <ClCompile Include="mathvector\MathVector.cpp" />
+    <ClCompile Include="opengllib\OpenGLLib.cpp" />
+    <ClCompile Include="opengllib\openglutility\OpenGLUtility.cpp" />
+    <ClCompile Include="options\Options.cpp" />
+    <ClCompile Include="particlesystems\particle\Particle.cpp" />
+    <ClCompile Include="particlesystems\particlesystem\ParticleSystem.cpp" />
+    <ClCompile Include="particlesystems\ParticleSystems.cpp" />
+    <ClCompile Include="projects.cpp" />
+    <ClCompile Include="particlesystems\rainparticles\RainParticles.cpp" />
+    <ClCompile Include="randomnum\RandomNum.cpp" />
+    <ClCompile Include="SideScrollingText\SideScrollingText.cpp" />
+    <ClCompile Include="apps\spriteanimationeditor\SpriteAnimation.cpp" />
+    <ClCompile Include="taunts\Taunts.cpp" />
+    <ClCompile Include="apps\spriteanimationeditor\TextureList.cpp" />
+    <ClCompile Include="tile\Tile.cpp" />
+    <ClCompile Include="tilemap\TileMap.cpp" />
+    <ClCompile Include="TileMapLib\TileMapLib.cpp" />
+    <ClCompile Include="tileset\TileSet.cpp" />
+    <ClCompile Include="timeinterval\TimeInterval.cpp" />
+    <ClCompile Include="tinyxml\tinystr.cpp" />
+    <ClCompile Include="tinyxml\tinyxml.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="mathvector\vector2d\Vector2D.cpp" />
+    <ClCompile Include="mathvector\vector3d\Vector3D.cpp" />
+    <ClCompile Include="windowsutility\WindowsUtility.cpp" />
+    <ClCompile Include="winfilehandler\WinFileHandler.cpp" />
+    <ClCompile Include="winhfont\WinHFont.cpp" />
+    <ClCompile Include="winparsecommandline\WinParseCommandLine.cpp" />
+    <ClCompile Include="winthread\WinThread.cpp" />
+    <ClCompile Include="wintimers\WinTimers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="enet\enet.vcxproj">
+      <Project>{1bce7554-4e79-47d5-8802-8bbde302b94e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="OpenGLLib\C_GLTextureManagerHash\glpng\glpng.vcxproj">
+      <Project>{411b449a-b15e-44ba-bc22-e3be17e03c2f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

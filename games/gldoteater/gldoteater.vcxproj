@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{49542528-52A5-4231-BE52-BFA32D8B820A}</ProjectGuid>
+    <RootNamespace>gldoteater</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30804.86</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LibraryPath>C:\projects\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LibraryPath>C:\projects\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\projects\NonStandardHeaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\projects\NonStandardHeaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="partial_source\builddisplaylists.cpp" />
+    <ClCompile Include="partial_source\button.cpp" />
+    <ClCompile Include="partial_source\buttoncallbacks.cpp" />
+    <ClCompile Include="partial_source\clipboard.cpp" />
+    <ClCompile Include="partial_source\commandline.cpp" />
+    <ClCompile Include="partial_source\CommonSpriteAttributes.cpp" />
+    <ClCompile Include="partial_source\console.cpp" />
+    <ClCompile Include="partial_source\cosolecommands.cpp" />
+    <ClCompile Include="partial_source\C_DotEater.cpp" />
+    <ClCompile Include="partial_source\C_GHost.cpp" />
+    <ClCompile Include="partial_source\gamekeys.cpp" />
+    <ClCompile Include="partial_source\gamestate.cpp" />
+    <ClCompile Include="partial_source\gettext.cpp" />
+    <ClCompile Include="partial_source\handlecollisions.cpp" />
+    <ClCompile Include="partial_source\initialise.cpp" />
+    <ClCompile Include="partial_source\listbox.cpp" />
+    <ClCompile Include="partial_source\load.cpp" />
+    <ClCompile Include="partial_source\main.cpp" />
+    <ClCompile Include="partial_source\mainfunctions.cpp" />
+    <ClCompile Include="partial_source\masterserver.cpp" />
+    <ClCompile Include="partial_source\messagehandler.cpp" />
+    <ClCompile Include="partial_source\networkclient.cpp" />
+    <ClCompile Include="partial_source\networkcommands.cpp" />
+    <ClCompile Include="partial_source\networkmain.cpp" />
+    <ClCompile Include="partial_source\networkserver.cpp" />
+    <ClCompile Include="partial_source\render.cpp" />
+    <ClCompile Include="partial_source\save.cpp" />
+    <ClCompile Include="partial_source\selection.cpp" />
+    <ClCompile Include="partial_source\sound.cpp" />
+    <ClCompile Include="partial_source\UpdateObjects.cpp" />
+    <ClCompile Include="partial_source\winsock.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="partial_source\CommonSpriteAttributes.h" />
+    <ClInclude Include="partial_source\C_DotEater.h" />
+    <ClInclude Include="partial_source\C_GHost.h" />
+    <ClInclude Include="partial_source\main.h" />
+    <ClInclude Include="partial_source\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="partial_source\resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\enet\enet.vcxproj">
+      <Project>{1bce7554-4e79-47d5-8802-8bbde302b94e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\projects.vcxproj">
+      <Project>{09c71111-d3e4-4884-ae2f-d7155b1d500e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

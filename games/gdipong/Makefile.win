@@ -1,0 +1,70 @@
+# Project: gdipong
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 14/11/19 07:30
+
+WXLIBNAME = wxmsw29u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Objects/MingW/C_Dot.o Objects/MingW/C_Line.o Objects/MingW/main.o Objects/MingW/CWinApplication.o Objects/MingW/CWinBase.o Objects/MingW/C_HDC.o Objects/MingW/C_MemoryDC.o Objects/MingW/C_PaintDC.o Objects/MingW/C_GetDC.o Objects/MingW/CXMLMenu.o Objects/MingW/CFmod.o
+LINKOBJ   = "Objects/MingW/C_Dot.o" "Objects/MingW/C_Line.o" "Objects/MingW/main.o" "Objects/MingW/CWinApplication.o" "Objects/MingW/CWinBase.o" "Objects/MingW/C_HDC.o" "Objects/MingW/C_MemoryDC.o" "Objects/MingW/C_PaintDC.o" "Objects/MingW/C_GetDC.o" "Objects/MingW/CXMLMenu.o" "Objects/MingW/CFmod.o"
+LIBS      = -L"C:/Program Files (x86)/Dev-Cpp/lib/wx/gcc_lib" -L"C:/Program Files (x86)/Dev-Cpp/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -mwindows ../../Objects/MingW/projects.o  
+INCS      = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include"
+CXXINCS   = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/" -I"C:/Program Files (x86)/Dev-Cpp/include/common" -I"C:/projects/NonStandardHeaders" -I"C:/Program Files (x86)/FMOD SoundSystem/FMOD Studio API Universal Windows Platform/api/core/inc"
+RCINCS    = --include-dir "C:/PROGRA~2/Dev-Cpp/include/common"
+BIN       = Output/MingW/gdipong.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES)  
+CFLAGS    = $(INCS) $(DEFINES)  
+GPROF     = gprof.exe
+ifeq ($(OS),Windows_NT)
+   RM = del /Q
+   FixPath = $(subst /,\,$1)
+else
+   RM = rm -f
+   FixPath = $1
+endif
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(call FixPath,$(LINKOBJ)) "$(call FixPath,$(BIN))"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Objects/MingW/C_Dot.o: $(GLOBALDEPS) C_Dot.cpp
+	$(CPP) -c C_Dot.cpp -o Objects/MingW/C_Dot.o $(CXXFLAGS)
+
+Objects/MingW/C_Line.o: $(GLOBALDEPS) C_Line.cpp
+	$(CPP) -c C_Line.cpp -o Objects/MingW/C_Line.o $(CXXFLAGS)
+
+Objects/MingW/main.o: $(GLOBALDEPS) main.cpp
+	$(CPP) -c main.cpp -o Objects/MingW/main.o $(CXXFLAGS)
+
+Objects/MingW/CWinApplication.o: $(GLOBALDEPS) ../../CWinApplication/CWinApplication.cpp
+	$(CPP) -c ../../CWinApplication/CWinApplication.cpp -o Objects/MingW/CWinApplication.o $(CXXFLAGS)
+
+Objects/MingW/CWinBase.o: $(GLOBALDEPS) ../../CWinBase/CWinBase.cpp
+	$(CPP) -c ../../CWinBase/CWinBase.cpp -o Objects/MingW/CWinBase.o $(CXXFLAGS)
+
+Objects/MingW/C_HDC.o: $(GLOBALDEPS) ../../C_HDC/C_HDC.cpp
+	$(CPP) -c ../../C_HDC/C_HDC.cpp -o Objects/MingW/C_HDC.o $(CXXFLAGS)
+
+Objects/MingW/C_MemoryDC.o: $(GLOBALDEPS) ../../C_HDC/C_MemoryDC/C_MemoryDC.cpp
+	$(CPP) -c ../../C_HDC/C_MemoryDC/C_MemoryDC.cpp -o Objects/MingW/C_MemoryDC.o $(CXXFLAGS)
+
+Objects/MingW/C_PaintDC.o: $(GLOBALDEPS) ../../C_HDC/C_PaintDC/C_PaintDC.cpp
+	$(CPP) -c ../../C_HDC/C_PaintDC/C_PaintDC.cpp -o Objects/MingW/C_PaintDC.o $(CXXFLAGS)
+
+Objects/MingW/C_GetDC.o: $(GLOBALDEPS) ../../C_HDC/C_GetDC/C_GetDC.cpp
+	$(CPP) -c ../../C_HDC/C_GetDC/C_GetDC.cpp -o Objects/MingW/C_GetDC.o $(CXXFLAGS)
+
+Objects/MingW/CXMLMenu.o: $(GLOBALDEPS) ../../CXMLMenu/CXMLMenu.cpp
+	$(CPP) -c ../../CXMLMenu/CXMLMenu.cpp -o Objects/MingW/CXMLMenu.o $(CXXFLAGS)
+
+Objects/MingW/CFmod.o: $(GLOBALDEPS) ../../CFmod/CFmod.cpp
+	$(CPP) -c ../../CFmod/CFmod.cpp -o Objects/MingW/CFmod.o $(CXXFLAGS)

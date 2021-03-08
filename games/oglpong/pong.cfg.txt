@@ -1,0 +1,15 @@
+Nick=try_catch_this
+Port=7654
+LastIP=127.0.0.1
+FPSLimit=100
+VSync=0
+trackmouse=1
+fullscreen=0
+masterserverhost=localhost
+masterserverpath=
+# Begin: Leave these values alone, for debugging purposes only!
+Width=
+Height=
+x_pos=
+y_pos=
+# End

@@ -1,0 +1,5 @@
+nick=127.0.0.1
+port=7655
+masterserverhost=
+remotehostaddress=127.0.0.1
+masterserverpath=/andreboyce/server/

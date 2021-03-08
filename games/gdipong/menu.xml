@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no" ?>
+<MENU>
+    <POPUP name="Game">
+        <MENUITEM value="1000">new</MENUITEM>
+        <MENUITEM value="1001">Exit</MENUITEM>
+    </POPUP>
+    <POPUP name="Options">
+        <MENUITEM value="1002">Momentum</MENUITEM>
+        <POPUP name="Difficulty">
+            <MENUITEM value="1003">Easy</MENUITEM>
+            <MENUITEM value="1004">Normal</MENUITEM>
+            <MENUITEM value="1005">l337</MENUITEM>
+            <MENUITEM value="1006">Humans Cant Win</MENUITEM>
+        </POPUP>
+        <MENUITEM value="1007">Sound</MENUITEM>
+    </POPUP>
+    <POPUP name="Help">
+        <MENUITEM value="1008">Contents</MENUITEM>
+        <MENUITEM value="1009">Credits</MENUITEM>
+        <MENUITEM value="1010">About</MENUITEM>
+    </POPUP>
+</MENU>

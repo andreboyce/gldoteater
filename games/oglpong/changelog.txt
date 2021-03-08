@@ -1,0 +1,89 @@
+avaiable @ http://www.raptor85.com/modules.php?name=Downloads&d_op=getit&lid=9
+
+----------------------------------------changes 0.5---------------------------------------------
+
+Added another console for player 2
+Found a bug in options: When you enter options for the first time and keep pressing enter to get out. If you press tabb while in game mode when you get to options you cant move the cursor up and down.
+Added a basic taunt system
+In pre-alpha network testing phase
+Decided to use async sockets instead of blocking sockets
+Ran the game on a pentium 2 and got 0.55 fps! I may think about optimising the gfx code earlier because of this
+Added Lots of stuff to the console mainly copy and paste
+Made a Flash class so you have flashing text now
+1 to toggle player 2 console
+Added a "cheat feature" type "/lamer" to cheat
+I found a stupid bug that stopped me from being able to connect
+Added more console commands
+Made a function to get values from the file version
+Major improvement to console
+FUll screen mode
+Figuredout why the paddle didnt move back with the rest of the objects when I changed its position
+Added some Help
+Added a display list class
+Added a glFlush and disable rendering context on WM_CLOSE to fix a nasty bug where the video card went into an intinite loop trying to finish rendering and caused a bluescreen of death
+Added a /list command
+Added a chat feature
+Improved console
+Lots of minor stuff that I cant rember
+Added ping
+Added bytes sent
+Working on sending game data
+Working on reducing lag
+Added some command line args
+
+----------------------------------------changes 0.4---------------------------------------------
+
+Major Improvements to the options menu
+Network code in easly testing stages
+Added a network thread
+Added a console
+
+
+----------------------------------------changes 0.3---------------------------------------------
+
+Added a winsock class.
+Added the Ability to play with the mouse instead of keyboard.
+Added 2 player mode!
+
+----------------------------------------changes 0.2---------------------------------------------
+
+Made the images power of 2
+Some bug fixes
+
+
+----------------------------------------changes 0.1---------------------------------------------
+
+Added some AI so the game is actually playable.
+
+--------------------------------------------Progress---------------------------------------------
+
+2  PlayerMode    ( 60% complete )
+2  PlayerNetWork ( 25% complete )
+GamePlay         ( 30% complete )
+Sound            ( 20% complete )
+Graphics         ( 20% complete )
+AI               ( 40% complete )
+Console          ( 70% complete )
+Cheat            ( 50% complete )
+
+----------------------------------------Instructions---------------------------------------------
+
+Up/Down    move Paddles
+Mouse      move Paddles
+Left/Right Serve
+F4         Toggle Sound
+Tab        Game Mode to See Options Menu
+Enter      Pause/Resume Game
+Enter      Exit Demo Mode
+Escape     Exit Option Menu Selection
+LShift     Decrease Game speed in game mode
+RShift     Increase Game speed in game mode
+`          toggle p1 console
+F3         toggle p2 console
+F12        toglefullscreen
+
+--------------------------------------Console Commands------------------------------------------
+/exit    exit
+/quit    quit
+/lamer   turn p1 into a computer in 1p mode ( cheat )
+/nolamer turn off cheat

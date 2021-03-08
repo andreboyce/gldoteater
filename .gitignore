@@ -1,0 +1,50 @@
+#ignore these directories
+.vs
+[Dd]ebug/
+[Rr]elease/
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.ilk
+
+# other
+*.pdb
+*.ncb
+*.idb
+*BuildLog.htm
+*.tlog
+*.log
+*.lastbuildstate
+[Tt]humbs.db
+
+# Precompiled Headers
+*.gch
+*.pch
+*.ipch
+*.sdf
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+#*.exe
+*.out
+*.app

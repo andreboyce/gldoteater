@@ -1,0 +1,35 @@
+// THIS FILE WILL BE OVERWRITTEN BY DEV-C++!
+// DO NOT EDIT!
+
+#include <windows.h> // include for version info constants
+
+#include "resource.rc"
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 0,1,1,505
+PRODUCTVERSION 0,1,1,505
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "040904E4"
+		 {
+			 VALUE "CompanyName", ""
+			 VALUE "FileVersion", ""
+			 VALUE "FileDescription", "Developed using the Dev-C++ IDE"
+			 VALUE "InternalName", "Dominators"
+			 VALUE "LegalCopyright", ""
+			 VALUE "LegalTrademarks", ""
+			 VALUE "OriginalFilename", "Dominators"
+			 VALUE "ProductName", "Dominators"
+			 VALUE "ProductVersion", ""
+		 }
+	 }
+  BLOCK "VarFileInfo"
+	 {
+		 VALUE "Translation", 0x0409, 1252
+	 }
+}

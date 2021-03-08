@@ -1,0 +1,72 @@
+: Enter Host IP address : 
+try_catch_this: 209.179.222.233
+: Connecting to : 209.179.222.233 : 7654
+: Asynchronous connection attempt started.
+: Connection established 
+: Server Version: 0.4.4.7
+: Press ~ to toggle console so you can serv
+try_catch_this: great
+Raptor85: gah, it's gone
+try_catch_this: 0_o
+: try_catch_this wins!
+Raptor85: a bit laggy i'd say
+try_catch_this: I am 56k
+Raptor85: so am i, but i get pings of 300 max in UT and half life
+try_catch_this: hmmm
+try_catch_this: I need to put the user input in another thread
+try_catch_this: I will fix it later
+try_catch_this: just wanted to make it playable
+Raptor85: wayyyyyy too much data being sent also
+try_catch_this: ok serving
+try_catch_this: x_x
+: try_catch_this wins!
+try_catch_this: -.-
+: try_catch_this wins!
+try_catch_this: lolnotice that I change the game speed
+Raptor85: lol, i crushed the ball
+try_catch_this: by pressing shift
+try_catch_this: L shift slow
+try_catch_this: r shift fast
+Raptor85: tight, negative speed reverses
+try_catch_this: you
+try_catch_this: yup*
+Raptor85: lol
+try_catch_this: lollolhmmm
+try_catch_this: u r slow
+try_catch_this: lol
+try_catch_this: :(
+: try_catch_this wins!
+try_catch_this: got to fix the trail though
+: try_catch_this wins!
+Raptor85: collision too, i hit the ball and it warps to you sometimes
+try_catch_this: k
+Raptor85: lol, and i can catch it
+Raptor85: also, there's no sound if you serve
+try_catch_this: /sc /getvar path
+Raptor85: D:\Documents and Settings\Nicholas Anton\My Documents\oglpong\oglpong\
+Raptor85: OGLPongOnlinev0.4.4.7.exe
+: try_catch_this wins!
+try_catch_this: you still wanna play?
+Raptor85: not really, lol
+try_catch_this: Its time to code now
+Raptor85: back to chat
+Raptor85: and coding
+try_catch_this: got to fix these bugs
+Raptor85: and whatever
+try_catch_this: ypu
+try_catch_this: ther is 
+try_catch_this: a log of our conversation
+try_catch_this: console.log.txt
+try_catch_this: ok well
+try_catch_this: not bad for a first game I would say
+Raptor85: how do i exit?
+try_catch_this: these guys on #gamedef are dam helpfull :P
+try_catch_this: just close the program
+try_catch_this: or I could
+try_catch_this: do it for you
+Raptor85: yes, why not
+try_catch_this: /sc /exit
+: Software caused connection abort. An established connection was aborte
+: d by the software in your host computer, possibly due to a data transm
+: ission time-out or protocol error.
+: Disconnected 

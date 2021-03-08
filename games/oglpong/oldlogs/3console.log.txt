@@ -1,0 +1,46 @@
+[8:39:44 AM]: Connecting To Master Server...
+[8:39:45 AM]: Press Enter to accept: 
+[8:39:46 AM]/nick to change me: 203.59.191.26
+[8:39:46 AM]: Connecting to : 203.59.191.26 : 7654
+[8:39:46 AM]: Asynchronous connection attempt started.
+[8:39:48 AM]: Connection established 
+[8:39:48 AM]: Server Version: 0.4.5.3
+[8:39:48 AM]: Press ~ to toggle console so you can serv
+[8:39:52 AM]/nick to change me: yay!
+[8:40:37 AM]/nick to change me: /nick tct
+[8:40:37 AM]: Your new nick is: tct
+[8:40:52 AM]tct: serv
+[8:41:46 AM]tct: lag
+[8:42:11 AM]Chacha: is that you
+[8:42:14 AM]tct: yes
+[8:42:20 AM]Chacha: haha cool
+[8:42:23 AM]tct: try_catch_this
+[8:42:25 AM]Chacha: it's quite laggy
+[8:42:28 AM]tct: /nick try_catch_this
+[8:42:28 AM]: Your new nick is: try_catch_this
+[8:42:33 AM]try_catch_this: yes it is
+[8:42:40 AM]try_catch_this: I am 56k +
+[8:42:41 AM]try_catch_this: 
+[8:42:54 AM]Chacha: i'm on 28k
+[8:43:05 AM]try_catch_this: 28k? huh
+[8:43:07 AM]Chacha: :(
+[8:43:14 AM]try_catch_this: wtf is 28k?
+[8:43:18 AM]Chacha: well 56k, but it's always on 28 or 25
+[8:43:26 AM]try_catch_this: :(
+[8:43:28 AM]try_catch_this: ouch
+[8:43:50 AM]Chacha: how come i can catch the ball?
+[8:43:58 AM]try_catch_this: you didnt
+[8:44:03 AM]try_catch_this: I scored a point
+[8:44:06 AM]try_catch_this: dont worry
+[8:44:16 AM]Chacha: omg i didn't even see because of the lag :P
+[8:44:18 AM]try_catch_this: someone else had the same problem as you thinking
+[8:44:25 AM]try_catch_this: that they caught the ball
+[8:44:25 AM]Chacha: i looked as if I caught the ball :)
+[8:44:56 AM]try_catch_this: dam
+[8:45:15 AM]Chacha: u suck :P
+[8:45:18 AM]Chacha: lol
+[8:45:23 AM]try_catch_this: this is the worst lag I have ever had
+[8:45:34 AM]Chacha: yeah
+[8:45:34 AM]try_catch_this: oh yeah?
+[8:45:38 AM]try_catch_this: huh? huh?
+[8:45:47 AM]try_catch_this: :P

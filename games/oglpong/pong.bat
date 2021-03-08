@@ -1,0 +1,1 @@
+start OGLPongOnline*.exe -fs -vs

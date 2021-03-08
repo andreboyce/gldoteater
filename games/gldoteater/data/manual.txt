@@ -1,0 +1,5 @@
+mushroom  = extra invinsibility time
+grapes    = grape gun
+banana    = ???
+cherry    = cherry bombs
+blindfold = make map tiles black
