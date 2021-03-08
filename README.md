@@ -14,7 +14,7 @@ https://github.com/andreboyce/gldoteater/raw/main/games/gldoteater/gldoteater.ns
 
 Map editor here:
 
-https://github.com/andreboyce/gldoteater/raw/main/apps/
+https://github.com/andreboyce/gldoteater/tree/main/apps/TileMapEditor
 
 ### Keywords
 
@@ -53,6 +53,8 @@ I wrote this game along time ago. The plan was to make a pong clone, then a pacm
 Recompiling this in Visual Studio Community was a pain took several weeks to sort most of the errors. Not to mention that with every version os VS community there are more changes.
 
 Back when I wrote this I used no unit tests only application testing.
+
+Going to change all the assets to FOS artwork.
 
 ### Resources
 
