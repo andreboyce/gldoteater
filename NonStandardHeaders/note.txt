@@ -1,0 +1,10 @@
+https://forums.wxwidgets.org/viewtopic.php?t=14077
+
+Included vc project does not compile for wxwidgets
+
+changed
+return (int)WX_TIMEZONE;
+to
+return (int)0;
+
+in datetime.cpp

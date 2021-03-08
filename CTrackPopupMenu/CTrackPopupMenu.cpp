@@ -52,7 +52,7 @@ bool CTrackPopupMenu::LoadMenu( const std::string & menufile, const DWORD comman
       LogError( "Could Not Load Menu File" );
    }
    TiXmlElement *parentmenuElement = menu.FirstChildElement( "MENU" );
-   assert( parentmenuElement );
+   //assert( parentmenuElement );
    return ( AssembleMenu( *parentmenuElement, command_value ) && menu.SaveFile() );
 }
 

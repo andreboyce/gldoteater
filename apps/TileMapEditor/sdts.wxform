@@ -1,0 +1,70 @@
+object frmNewForm: TfrmNewForm
+  Left = 8
+  Top = 8
+  Width = 374
+  Height = 658
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Special Data Types'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = True
+  PopupMenu = MainForm.DesignerPopup
+  Visible = True
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnResize = NewFormResize
+  Wx_ICON.Data = {07544269746D617000000000}
+  Wx_Name = 'SpecialDataTypesDialog'
+  Wx_IDName = 'ID_DIALOG1'
+  Wx_IDValue = 1000
+  Wx_Class = 'wxDialog'
+  Wx_Center = True
+  Wx_Hidden = False
+  Wx_GeneralStyle = []
+  Wx_DialogStyle = [wxCAPTION, wxSYSTEM_MENU, wxDIALOG_NO_PARENT, wxMINIMIZE_BOX, wxCLOSE_BOX]
+  EVT_CLOSE = 'SpecialDataTypesDialogClose'
+  PixelsPerInch = 120
+  TextHeight = 16
+  object WxListCtrl1: TWxListCtrl
+    Left = 4
+    Top = 11
+    Width = 41
+    Height = 466
+    Columns = <>
+    TabOrder = 0
+    ViewStyle = vsReport
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxListCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXLISTCTRL1'
+    Wx_IDValue = 1003
+    Wx_ListviewStyle = [wxLC_REPORT]
+    Wx_StrechFactor = 0
+  end
+  object WxListCtrl2: TWxListCtrl
+    Left = 45
+    Top = 11
+    Width = 168
+    Height = 466
+    Columns = <>
+    TabOrder = 1
+    ViewStyle = vsReport
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxListCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXLISTCTRL2'
+    Wx_IDValue = 1005
+    Wx_ListviewStyle = [wxLC_REPORT]
+    Wx_StrechFactor = 0
+  end
+end

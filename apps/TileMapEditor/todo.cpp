@@ -1,0 +1,10 @@
+/*
+A new set of menu options to allow flipping a set of tiles
+Flip
+   Flip verticle
+   flip horisontal
+
+Fix the hot keys
+
+Fix the saving options
+*/

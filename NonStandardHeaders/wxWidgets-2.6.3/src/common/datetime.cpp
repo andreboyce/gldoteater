@@ -327,7 +327,8 @@ static int GetTimeZone()
 
     return (int)gmtoffset;
 #else // !WX_GMTOFF_IN_TM
-    return (int)WX_TIMEZONE;
+    //return (int)WX_TIMEZONE;
+    return (int)0; // added this
 #endif // WX_GMTOFF_IN_TM/!WX_GMTOFF_IN_TM
 }
 

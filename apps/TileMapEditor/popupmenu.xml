@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no" ?>
+<MENU isPopup="1">
+    <MENUITEM value="11">Solidity</MENUITEM>
+    <MENUITEM value="12">Diselect</MENUITEM>
+    <MENUITEM value="13">Select This Index</MENUITEM>
+    <MENUITEM value="14">ReLoad This Index</MENUITEM>
+    <MENUITEM value="15">Copy Ctrl+C</MENUITEM>
+    <MENUITEM value="16">Cut Ctrl+X</MENUITEM>
+    <MENUITEM value="17">Paste Ctrl+V</MENUITEM>
+    <MENUITEM value="18">Undo Ctrl+Z</MENUITEM>
+    <MENUITEM value="19">Redo Ctrl+R</MENUITEM>
+    <MENUITEM value="20">Resize Map Ctrl+E</MENUITEM>
+    <MENUITEM value="21">Properties Ctrl+P</MENUITEM>
+    <MENUITEM value="22">Save This Index As</MENUITEM>
+    <POPUP name="Sprites">
+        <MENUITEM value="23">Add Sprite</MENUITEM>
+        <MENUITEM value="24">Delete Sprites</MENUITEM>
+        <MENUITEM value="25">Sprite Statictics</MENUITEM>
+    </POPUP>
+    <POPUP name="A*">
+        <MENUITEM value="26">Create-StartPoint</MENUITEM>
+        <MENUITEM value="27">Create-EndPoint</MENUITEM>
+        <MENUITEM value="28">Run</MENUITEM>
+        <MENUITEM value="29">Show Stats</MENUITEM>
+    </POPUP>
+</MENU>

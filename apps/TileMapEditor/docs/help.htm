@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE> TileMap Editor </TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 1.1.0  (Win32)">
+	<META NAME="CREATED" CONTENT="20040720;15183340">
+	<META NAME="CHANGED" CONTENT="20040720;15255528">
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<H1>TileMap Editor</H1>
+<P><IMG SRC="tilemapedtior.jpg" NAME="Graphic1" ALT="SCREEN SHOT" ALIGN=LEFT WIDTH=1085 HEIGHT=952 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P>Instructions:</P>
+<P>You can load and edit one of the already availabe tilemaps or you
+can create a new one from scratch.</P>
+<P>Shift clicking increments the index on a tile.</P>
+<P>Control clicking makes the current selected tile the tile you just
+clicked.</P>
+<P>You can drag with the left mouse button and the tiles you draged
+over will become the selected ones.</P>
+<H1>Features</H1>
+AStar
+Resize (maps are dynamic)
+Terrain cost (solidity)
+<H1>AStar</H1>
+To set a map for path finding you must edit the solidity of each tile. The solidity is a measure of how easy it is to pass through the tile. Currently the max solidity (1000) represents that a cannot be passed through at all, but a tile with a solidity of 999 can be passed through however it will this implementation of AStar will ignore it unless the alternative path has a higher cost.
+<img src="solidity.jpg">
+Use this dialog to set the solidity of the current selected tile, it will apply to all tiles with that index.
+<H1>Demo</H1>
+A PacMan clone named doteater. Its just there as an example of the putting the map edtior to use.
+<H1>Autior</H1>
+<P>Autor: 
+</P>
+<P>try_catch_this</P>
+<P>HomePage</P>
+<P>www.raptor85.com/try_catch_this</P>
+</BODY>
+</HTML>

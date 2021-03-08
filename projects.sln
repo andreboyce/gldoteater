@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glpng", "OpenGLLib\C_GLText
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "oglpong", "games\oglpong\oglpong.vcxproj", "{C865680C-9FD9-4527-9C6D-4074F54D058B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TileMapEditor", "apps\TileMapEditor\TileMapEditor.vcxproj", "{B6942A75-03FA-4EA4-8C10-18D5328A00E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -67,6 +69,12 @@ Global
 		{C865680C-9FD9-4527-9C6D-4074F54D058B}.Release|Win32.ActiveCfg = Release|Win32
 		{C865680C-9FD9-4527-9C6D-4074F54D058B}.Release|Win32.Build.0 = Release|Win32
 		{C865680C-9FD9-4527-9C6D-4074F54D058B}.Release|x64.ActiveCfg = Release|Win32
+		{B6942A75-03FA-4EA4-8C10-18D5328A00E1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B6942A75-03FA-4EA4-8C10-18D5328A00E1}.Debug|Win32.Build.0 = Debug|Win32
+		{B6942A75-03FA-4EA4-8C10-18D5328A00E1}.Debug|x64.ActiveCfg = Debug|Win32
+		{B6942A75-03FA-4EA4-8C10-18D5328A00E1}.Release|Win32.ActiveCfg = Release|Win32
+		{B6942A75-03FA-4EA4-8C10-18D5328A00E1}.Release|Win32.Build.0 = Release|Win32
+		{B6942A75-03FA-4EA4-8C10-18D5328A00E1}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
