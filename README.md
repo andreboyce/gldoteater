@@ -2,11 +2,19 @@
 
 A Pac Clone
 
+### Requirements
+
+Windows XP or Above
+
 ### Install
 
 This is the file you want:
 
 https://github.com/andreboyce/gldoteater/raw/main/games/gldoteater/gldoteater.nsi.exe
+
+Map editor here:
+
+https://github.com/andreboyce/gldoteater/raw/main/apps/
 
 ### Keywords
 
@@ -32,9 +40,11 @@ https://github.com/andreboyce/gldoteater/raw/main/games/gldoteater/gldoteater.ns
 
 ### Compiling
 
+git clone https://github.com/andreboyce/gldoteater.git
+
 Download visual studio comunnity 2019 https://visualstudio.microsoft.com/vs/community/
 
-Open projects.sln
+Open projects.sln and Build
 
 ### Notes
 
