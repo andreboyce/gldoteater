@@ -8,7 +8,6 @@
 #git commit -m "first commit"
 #git branch -M main
 #git remote add origin 'git@github.com:andreboyce/gldoteater.git'
-#git remote set-url origin 'git@github.com:andreboyce/gldoteater.git'
 
 MESSAGE=$1
 
