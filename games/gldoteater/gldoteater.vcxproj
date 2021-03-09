@@ -40,12 +40,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>.\Debug\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
-    <LibraryPath>C:\projects\Debug;$(LibraryPath)</LibraryPath>
+    <LibraryPath>..\..\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>.\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
-    <LibraryPath>C:\projects\Release;$(LibraryPath)</LibraryPath>
+    <LibraryPath>..\..\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

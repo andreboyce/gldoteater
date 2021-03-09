@@ -1,7 +1,8 @@
 #ignore these directories
-.vs
+.vs/
 [Dd]ebug/
 [Rr]elease/
+other_projects/
 
 # Prerequisites
 *.d

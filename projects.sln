@@ -19,6 +19,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "oglpong", "games\oglpong\og
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TileMapEditor", "apps\TileMapEditor\TileMapEditor.vcxproj", "{B6942A75-03FA-4EA4-8C10-18D5328A00E1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tm-btm", "apps\tm-btm\tm-btm.vcxproj", "{C9027C8A-3E3C-4954-8431-340DE49DC232}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MapEdit", "apps\MapEdit\MapEdit.vcxproj", "{B18E861A-01E9-4668-A4A3-75CE9DBA0A90}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "map_converter", "apps\map_converter\map_converter\map_converter.vcxproj", "{E1848181-0B70-4C77-89E5-E5BB876874BC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TileImporter", "apps\TileImporter\TileImporter.vcxproj", "{FAF94D24-08D8-4691-97DE-F99D482F8792}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -75,6 +83,30 @@ Global
 		{B6942A75-03FA-4EA4-8C10-18D5328A00E1}.Release|Win32.ActiveCfg = Release|Win32
 		{B6942A75-03FA-4EA4-8C10-18D5328A00E1}.Release|Win32.Build.0 = Release|Win32
 		{B6942A75-03FA-4EA4-8C10-18D5328A00E1}.Release|x64.ActiveCfg = Release|Win32
+		{C9027C8A-3E3C-4954-8431-340DE49DC232}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C9027C8A-3E3C-4954-8431-340DE49DC232}.Debug|Win32.Build.0 = Debug|Win32
+		{C9027C8A-3E3C-4954-8431-340DE49DC232}.Debug|x64.ActiveCfg = Debug|Win32
+		{C9027C8A-3E3C-4954-8431-340DE49DC232}.Release|Win32.ActiveCfg = Release|Win32
+		{C9027C8A-3E3C-4954-8431-340DE49DC232}.Release|Win32.Build.0 = Release|Win32
+		{C9027C8A-3E3C-4954-8431-340DE49DC232}.Release|x64.ActiveCfg = Release|Win32
+		{B18E861A-01E9-4668-A4A3-75CE9DBA0A90}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B18E861A-01E9-4668-A4A3-75CE9DBA0A90}.Debug|Win32.Build.0 = Debug|Win32
+		{B18E861A-01E9-4668-A4A3-75CE9DBA0A90}.Debug|x64.ActiveCfg = Debug|Win32
+		{B18E861A-01E9-4668-A4A3-75CE9DBA0A90}.Release|Win32.ActiveCfg = Release|Win32
+		{B18E861A-01E9-4668-A4A3-75CE9DBA0A90}.Release|Win32.Build.0 = Release|Win32
+		{B18E861A-01E9-4668-A4A3-75CE9DBA0A90}.Release|x64.ActiveCfg = Release|Win32
+		{E1848181-0B70-4C77-89E5-E5BB876874BC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E1848181-0B70-4C77-89E5-E5BB876874BC}.Debug|Win32.Build.0 = Debug|Win32
+		{E1848181-0B70-4C77-89E5-E5BB876874BC}.Debug|x64.ActiveCfg = Debug|Win32
+		{E1848181-0B70-4C77-89E5-E5BB876874BC}.Release|Win32.ActiveCfg = Release|Win32
+		{E1848181-0B70-4C77-89E5-E5BB876874BC}.Release|Win32.Build.0 = Release|Win32
+		{E1848181-0B70-4C77-89E5-E5BB876874BC}.Release|x64.ActiveCfg = Release|Win32
+		{FAF94D24-08D8-4691-97DE-F99D482F8792}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FAF94D24-08D8-4691-97DE-F99D482F8792}.Debug|Win32.Build.0 = Debug|Win32
+		{FAF94D24-08D8-4691-97DE-F99D482F8792}.Debug|x64.ActiveCfg = Debug|Win32
+		{FAF94D24-08D8-4691-97DE-F99D482F8792}.Release|Win32.ActiveCfg = Release|Win32
+		{FAF94D24-08D8-4691-97DE-F99D482F8792}.Release|Win32.Build.0 = Release|Win32
+		{FAF94D24-08D8-4691-97DE-F99D482F8792}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

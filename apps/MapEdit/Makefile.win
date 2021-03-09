@@ -1,0 +1,60 @@
+# Project: MapEdit
+# Makefile created by Dev-C++ 4.9.9.2-wx-beta-6.7
+
+CPP  = g++.exe -D__DEBUG__
+CC   = gcc.exe -D__DEBUG__
+WINDRES = windres.exe
+RES  = MapEdit_private.res
+OBJ  = main.o messagehandler.o initialize.o render.o load.o mainfunctions.o save.o sdts.o tileproperties.o ../../OpenGLLib/C_GLTextureMappedFont/C_GLTextureMappedFont.o $(RES)
+LINKOBJ  = main.o messagehandler.o initialize.o render.o load.o mainfunctions.o save.o sdts.o tileproperties.o ../../OpenGLLib/C_GLTextureMappedFont/C_GLTextureMappedFont.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -mwindows ../../projects_od.a -lopengl32 -lglu32 -lversion -lglaux  -g3 
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include"  -I"C:/Dev-Cpp/include/wx/msw"  -I"C:/Dev-Cpp/include/wx/generic"  -I"C:/Dev-Cpp/include/wx/animate"  -I"C:/Dev-Cpp/include/wx/fl"  -I"C:/Dev-Cpp/include/wx/gizmos"  -I"C:/Dev-Cpp/include/wx/html"  -I"C:/Dev-Cpp/include/wx/mmedia"  -I"C:/Dev-Cpp/include/wx/net"  -I"C:/Dev-Cpp/include/wx/ogl"  -I"C:/Dev-Cpp/include/wx/plot"  -I"C:/Dev-Cpp/include/wx/protocol"  -I"C:/Dev-Cpp/include/wx/stc"  -I"C:/Dev-Cpp/include/wx/svg"  -I"C:/Dev-Cpp/include/wx/xml"  -I"C:/Dev-Cpp/include/wx/xrc"  -I"C:/Dev-Cpp/include/wx" 
+BIN  = MapEdit.exe
+CXXFLAGS = $(CXXINCS)  -fexceptions -g3
+CFLAGS = $(INCS)  -fexceptions -g3
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before MapEdit.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "MapEdit.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+messagehandler.o: messagehandler.cpp
+	$(CPP) -c messagehandler.cpp -o messagehandler.o $(CXXFLAGS)
+
+initialize.o: initialize.cpp
+	$(CPP) -c initialize.cpp -o initialize.o $(CXXFLAGS)
+
+render.o: render.cpp
+	$(CPP) -c render.cpp -o render.o $(CXXFLAGS)
+
+load.o: load.cpp
+	$(CPP) -c load.cpp -o load.o $(CXXFLAGS)
+
+mainfunctions.o: mainfunctions.cpp
+	$(CPP) -c mainfunctions.cpp -o mainfunctions.o $(CXXFLAGS)
+
+save.o: save.cpp
+	$(CPP) -c save.cpp -o save.o $(CXXFLAGS)
+
+sdts.o: sdts.cpp
+	$(CPP) -c sdts.cpp -o sdts.o $(CXXFLAGS)
+
+tileproperties.o: tileproperties.cpp
+	$(CPP) -c tileproperties.cpp -o tileproperties.o $(CXXFLAGS)
+
+../../OpenGLLib/C_GLTextureMappedFont/C_GLTextureMappedFont.o: ../../OpenGLLib/C_GLTextureMappedFont/C_GLTextureMappedFont.cpp
+	$(CPP) -c ../../OpenGLLib/C_GLTextureMappedFont/C_GLTextureMappedFont.cpp -o ../../OpenGLLib/C_GLTextureMappedFont/C_GLTextureMappedFont.o $(CXXFLAGS)
+
+MapEdit_private.res: MapEdit_private.rc resource.rc 
+	$(WINDRES) -i MapEdit_private.rc --input-format=rc -o MapEdit_private.res -O coff 

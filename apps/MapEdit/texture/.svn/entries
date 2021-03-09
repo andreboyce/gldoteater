@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   url="file:///C:/Dev-Cpp/projects/subversion/games/GLDotEater/data/texture"
+   kind="dir"
+   schedule="add"
+   revision="0"/>
+<entry
+   name="deater.bmp"
+   kind="file"
+   schedule="add"/>
+<entry
+   name="rghost.bmp"
+   kind="file"
+   schedule="add"/>
+<entry
+   name="ip.bmp"
+   kind="file"
+   schedule="add"/>
+<entry
+   name="bigdot.bmp"
+   kind="file"
+   schedule="add"/>
+<entry
+   name="Thumbs.db"
+   kind="file"
+   schedule="add"/>
+<entry
+   name="wghost.bmp"
+   kind="file"
+   schedule="add"/>
+<entry
+   name="yghost.bmp"
+   kind="file"
+   schedule="add"/>
+<entry
+   name="maps"
+   kind="dir"
+   schedule="add"/>
+<entry
+   name="dot.bmp"
+   kind="file"
+   schedule="add"/>
+<entry
+   name="deater2.bmp"
+   kind="file"
+   schedule="add"/>
+<entry
+   name="bghost.bmp"
+   kind="file"
+   schedule="add"/>
+<entry
+   name="dghost.bmp"
+   kind="file"
+   schedule="add"/>
+<entry
+   name="arrow.bmp"
+   kind="file"
+   schedule="add"/>
+<entry
+   name="gghost.bmp"
+   kind="file"
+   schedule="add"/>
+<entry
+   name="back.bmp"
+   kind="file"
+   schedule="add"/>
+</wc-entries>
