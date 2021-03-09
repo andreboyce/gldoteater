@@ -1,3 +1,9 @@
+Open projects.sln with Visual Studio Community
+
+--- 
+Old
+--- 
+
 You need dev-c++
 http://prdownloads.sourceforge.net/dev-cpp/devcpp4991setup.exe?download
 actually now you need wx-dev-c++
@@ -6,9 +12,7 @@ wxdsgn.sourceforge.net
 You cannot compile this project with the source provided, it is here to serve as a back up copy of the most recent version.
 
 To compile you need to download my game libary and copy this directory into /games/gldoteater.
-http://raptor85.com/try_catch_this/projects.exe
-actually raptor85.com is down permanently I have to upload a new version :)
-that means you cant compile this project
+https://github.com/andreboyce/gldoteater
 
 Also you need to edit the file commctl.h so that INITCOMMONCONTROLSEX is defined.
 

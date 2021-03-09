@@ -13,7 +13,8 @@ use warnings;
 $orignal_file     = "gldoteater.exe";
 $compressed_fileb = "gldoteaterb.exe";
 $compressed_filed = "gldoteaterd.exe";
-$upx_path         = "..\\upx\\upx.exe";#"C:\\Documents and Settings\\Default\\Desktop\\utils\\upx\\upx.exe";
+$upx_path         = "..\\..\\3rd-party-tools\\upx\\x86\\upx.exe";
+#$upx_path         = "..\\..\\3rd-party-tools\\upx\\x64\\upx.exe";
 $bWaitForKeyPressBeforeExit = 0;
 
 if( !(-e $orignal_file) )
