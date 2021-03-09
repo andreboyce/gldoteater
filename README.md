@@ -46,6 +46,10 @@ Download visual studio comunnity 2019 https://visualstudio.microsoft.com/vs/comm
 
 Open projects.sln and Build
 
+### Tests
+
+I wrote this code before TDD was a thing. Maybe as time goes by I might refactor some it to be testable.
+
 ### Notes
 
 I wrote this game along time ago. The plan was to make a pong clone, then a pacman clone, then a side scroller, then an rpg. Each of them should be multiplayer networked.
