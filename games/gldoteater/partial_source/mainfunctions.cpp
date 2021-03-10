@@ -1199,7 +1199,8 @@ Structs::Point MainWindow::GetTile( const Vector2D& position )
    if( !m_TileMap.m_Header.width || !m_TileMap.m_Header.height )
       return tile;
    long x =      (long)my_roundf((position.m_x + m_BoundingRectHalfWidthMinMapTexturedQuadhalfwidth)        * m_InvBoundingRectWidthDivTileMapWidth),
-	    y = abs( (long)my_roundf((position.m_y - m_BoundingRectHalfHeight + m_MapTexturedQuad.halfheight()) * m_InvBoundingRectHeightDivTileMapHeight) );
+	    //y = abs( (long)my_roundf((position.m_y - m_BoundingRectHalfHeight + m_MapTexturedQuad.halfheight()) * m_InvBoundingRectHeightDivTileMapHeight) );
+        y = abs( (long)my_roundf((position.m_y - m_BoundingRectHalfHeight + m_MapTexturedQuad.halfheight()*2) * m_InvBoundingRectHeightDivTileMapHeight) );
 
    //Structs::Point point = Structs::Point(      (long)my_roundf( (position.m_x + m_BoundingRectHalfWidthMinMapTexturedQuadhalfwidth) * m_InvBoundingRectWidthDivTileMapWidth),
    //                                       abs( (long)my_roundf( (position.m_y - m_BoundingRectHalfHeight + m_MapTexturedQuad.halfheight()) * m_InvBoundingRectHeightDivTileMapHeight) ) );
@@ -1219,8 +1220,10 @@ Structs::Point MainWindow::GetTile( const Structs::dPoint3D& position )
    Structs::Point tile;
    if( !m_TileMap.m_Header.width || !m_TileMap.m_Header.height )
       return tile;
+   //return Structs::Point( (long)my_roundf( ( position.m_x + m_BoundingRectHalfWidthMinMapTexturedQuadhalfwidth ) * m_InvBoundingRectWidthDivTileMapWidth ),
+   //                          abs( (long)my_roundf( ( position.m_y - m_BoundingRectHalfHeight + m_MapTexturedQuad.halfheight() ) * m_InvBoundingRectHeightDivTileMapHeight ) ) );
    return Structs::Point( (long)my_roundf( ( position.m_x + m_BoundingRectHalfWidthMinMapTexturedQuadhalfwidth ) * m_InvBoundingRectWidthDivTileMapWidth ),
-                             abs( (long)my_roundf( ( position.m_y - m_BoundingRectHalfHeight + m_MapTexturedQuad.halfheight() ) * m_InvBoundingRectHeightDivTileMapHeight ) ) );
+                             abs( (long)my_roundf( ( position.m_y - m_BoundingRectHalfHeight + m_MapTexturedQuad.halfheight()*2 ) * m_InvBoundingRectHeightDivTileMapHeight ) ) );
 }
 
 // Accepts: void

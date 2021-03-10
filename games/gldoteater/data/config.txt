@@ -1,5 +1,5 @@
-nick=127.0.0.1
+nick=andreboyce
 port=7655
 masterserverhost=
 remotehostaddress=127.0.0.1
-masterserverpath=/andreboyce/server/
+masterserverpath=/gldoteater/master_server/

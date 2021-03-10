@@ -1,0 +1,17 @@
+I'm rebuilding these php files after them being lost for like 14+ years.
+
+Masterserver files
+getgames.php
+erasegame.php
+savegame.php
+
+
+
+getgames.php is supposed to return a string like this
+game=doteater+version=0.4.5.3+nick=andreboyce+IP=127.0.0.1+port=7654
+
+erasegame.php
+erasegame.php?game=doteater&port=7654&nick=andreboyce&version=0.4.5.3
+
+savegame.php
+savegame.php?game=doteater&port=7654&nick=andreboyce&version=0.4.5.3
