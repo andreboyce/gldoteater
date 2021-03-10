@@ -72,7 +72,8 @@
       </AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(TargetDir)*$(TargetExt)" "$(ProjectDir)"</Command>
+      <Command>copy "$(TargetDir)*$(TargetExt)" "$(ProjectDir)";
+call $(ProjectDir)upx.bat;</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
