@@ -73,7 +73,8 @@
     </Link>
     <PostBuildEvent>
       <Command>copy "$(TargetDir)*$(TargetExt)" "$(ProjectDir)";
-call $(ProjectDir)upx.bat;</Command>
+call $(ProjectDir)upx.bat;
+call $(ProjectDir)nsis.bat;</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

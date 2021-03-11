@@ -1,16 +1,17 @@
+; https://sourceforge.net/projects/nsis/files/NSIS%202/
 ; gldoteater.nsi
 ;
 
 ;--------------------------------
 
 SetCompressor lzma
-;bzip2
+;SetCompressor bzip2
 
 ; The name of the installer
 Name "gldoteater"
 
 ; The name of the installer file
-OutFile "gldoteater.nsi.exe"
+OutFile "..\..\gldoteater.nsi.exe"
 
 ; The default installation directory
 InstallDir $PROGRAMFILES\gldoteater
@@ -23,14 +24,14 @@ LoadLanguageFile "${NSISDIR}\Contrib\Language Files\English.nlf"
 ;--------------------------------
 ;Version Information
 
-  VIProductVersion "0.9.4.0"
+  VIProductVersion "1.0.0.0"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductName" "gldoteater"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "Comments" "a multipler pacman clone"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "CompanyName" "Nil"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalTrademarks" "Nil"
-  VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalCopyright" "©andreboyce"
+  VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalCopyright" "ï¿½andreboyce"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "FileDescription" "gldoteater"
-  VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "0.9.3"
+  VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "1.0.0"
 
 ;--------------------------------
 
@@ -51,8 +52,8 @@ UninstPage instfiles
 
 ;--------------------------------
 ;icons
-Icon GLDotEater\partial_source\gldoteater.ico
-UninstallIcon GLDotEater\partial_source\gldoteater.ico
+Icon ..\..\partial_source\gldoteater.ico
+UninstallIcon ..\..\partial_source\gldoteater.ico
 ;--------------------------------
 XPStyle on
 ;--------------------------------
@@ -60,7 +61,7 @@ XPStyle on
 ; The stuff to install
 Section "gldoteater (required)"
 
-;  ExecShell "open" "gldoteater\upx.bat"
+  ;ExecShell "open" "..\..\upx.bat"
 
   SectionIn RO
   
@@ -68,19 +69,19 @@ Section "gldoteater (required)"
   SetOutPath $INSTDIR
   
   ; Put file there
-  File /x .svn\ /x *.res /x *.obj /x *.pch /x *.o /x *.a /x *.db /x *.Manifest /x *.bat GLDotEater\*.exe GLDotEater\*.dll
+  File /x .git\ /x .svn\ /x *.res /x *.obj /x *.pch /x *.o /x *.a /x *.db /x *.Manifest /x *.bat ..\..\*.dll ..\..\gldoteater.exe
 
   SetOutPath $INSTDIR\data
-  File /x .svn\ /x *.db /x *.bat GLDotEater\data\*.btm GLDotEater\data\*.txt GLDotEater\data\*.ts GLDotEater\data\*.sa GLDotEater\data\*.exe GLDotEater\data\*.tai
+  File /x .git\ /x .svn\ /x *.db /x *.bat ..\..\data\*.btm ..\..\data\*.txt ..\..\data\*.ts ..\..\data\*.sa ..\..\data\*.tai
 
   SetOutPath $INSTDIR\data\sounds
-  File /x .svn\ /x *.db GLDotEater\data\sounds\*.wav
+  File /x .svn\ /x *.db ..\..\data\sounds\*.wav
 
   SetOutPath $INSTDIR\data\texture
-  File /nonfatal /x .svn\ /x *.db GLDotEater\data\texture\*.dds
+  File /nonfatal /x .svn\ /x *.db ..\..\data\texture\*.dds
  
 ;  SetOutPath $INSTDIR\data\texture\maps
-;  File /nonfatal /x .svn\ /x *.db GLDotEater\data\texture\maps\*.png
+;  File /nonfatal /x .svn\ /x *.db ..\..\data\texture\maps\*.png
   
   ; Write the installation path into the registry
   WriteRegStr HKLM SOFTWARE\NSIS_gldoteater "Install_Dir" "$INSTDIR"
@@ -95,8 +96,19 @@ Section "gldoteater (required)"
 SectionEnd
 
 Section "Partial Source"
+   SetOutPath $INSTDIR
+   File ..\..\*.vcxproj
+
    SetOutPath $INSTDIR\partial_source
-   File  /x .svn\ /x *.res /x *.obj /x *.pch /x *.o /x *.a GLDotEater\partial_source\*.h GLDotEater\partial_source\*.cpp GLDotEater\partial_source\*.txt GLDotEater\partial_source\*.rc GLDotEater\partial_source\*.ico GLDotEater\partial_source\*.dev GLDotEater\partial_source\*.nsi
+   File /x .svn\ /x *.res /x *.obj /x *.pch /x *.o /x *.a ..\..\partial_source\*.h ..\..\partial_source\*.cpp ..\..\partial_source\*.txt ..\..\partial_source\*.rc ..\..\partial_source\*.ico ..\..\partial_source\*.bat
+   ;File /nonfatal ..\..\partial_source\*.dev   
+
+   SetOutPath $INSTDIR\partial_source\nsis_install_script
+   File  ..\..\partial_source\nsis_install_script\*.ini ..\..\partial_source\nsis_install_script\*.nsi
+
+   SetOutPath $INSTDIR\partial_source\master_server
+   File  ..\..\partial_source\master_server\*.php ..\..\partial_source\master_server\*.txt
+
 SectionEnd
 
 Section "Desktop Shortcut"
@@ -124,10 +136,12 @@ Section "Uninstall"
   DeleteRegKey HKLM SOFTWARE\NSIS_gldoteater
 
   ; Remove files and uninstaller
-  Delete $INSTDIR\data\sounds\*.*
-;  Delete $INSTDIR\data\texture\maps\*.*
+  ;Delete $INSTDIR\data\texture\maps\*.*
   Delete $INSTDIR\data\texture\*.*
+  Delete $INSTDIR\data\sounds\*.*
   Delete $INSTDIR\data\*.*
+  Delete $INSTDIR\partial_source\master_server\*.*
+  Delete $INSTDIR\partial_source\nsis_install_script\*.*
   Delete $INSTDIR\partial_source\*.*
   Delete $INSTDIR\*.*
   Delete $DESKTOP\gldoteater.lnk
@@ -140,6 +154,9 @@ Section "Uninstall"
   RMDir "$INSTDIR\data\texture\maps"
   RMDir "$INSTDIR\data\texture"
   RMDir "$INSTDIR\data"
+  RMDir "$INSTDIR\partial_source\master_server"
+  ;RMDir "$INSTDIR\partial_source\nsis_install_script\nsis"
+  RMDir "$INSTDIR\partial_source\nsis_install_script"  
   RMDir "$INSTDIR\partial_source"
   RMDir "$SMPROGRAMS\gldoteater"
   RMDir "$INSTDIR"
