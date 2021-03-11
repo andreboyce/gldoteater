@@ -128,6 +128,10 @@ call $(ProjectDir)nsis.bat;</Command>
       <Project>{09c71111-d3e4-4884-ae2f-d7155b1d500e}</Project>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="partial_source\gldoteater.ico" />
+    <Image Include="partial_source\gldoteaters.ico" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
